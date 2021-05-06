@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+    <form action="/" method="POST">
+        <div class="mb-3">
+            <label class="form-label">Name of the state</label>
+            <input name="state" type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Name of the city</label>
+            <input name="city" type="text" class="form-control">
+            <div class="form-text">Only the cities supported by the API can be searched</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+<%- include('partials/footer'); -%>

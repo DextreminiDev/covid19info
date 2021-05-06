@@ -1,0 +1,39 @@
+<%- include('partials/header'); -%>
+    <div><%=cityName%></div>
+    <br>
+    <div>Active
+        <ul>
+            <li>
+                <%=Active%>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div>All Time
+        <ul>
+            <li>
+                <%=allTimeConfirmed%>
+            </li>
+            <li>
+                <%=allTimeDeceased%>
+            </li>
+            <li>
+                <%=allTimeRecovered%>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div>Today
+        <ul>
+            <li>
+                <%=casesToday%>
+            </li>
+            <li>
+                <%=deathsToday%>
+            </li>
+            <li>
+                <%=recoveredToday%>
+            </li>
+        </ul>
+    </div>
+<%- include('partials/footer'); -%>
