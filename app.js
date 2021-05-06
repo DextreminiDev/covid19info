@@ -33,6 +33,7 @@ app.post("/", function(req, res){
         response.on("end", () => {
             // try {
                 let json = JSON.parse(body);
+
                 let current_active = json[state_name]["districtData"][city_name]["active"];
                 let allTime_confirmed = json[state_name]["districtData"][city_name]["confirmed"];
                 let allTime_deceased = json[state_name]["districtData"][city_name]["deceased"];
@@ -43,7 +44,6 @@ app.post("/", function(req, res){
                 let delta_recovered = json[state_name]["districtData"][city_name]["delta"]["recovered"];
 
                 location_info.push(current_active,allTime_confirmed,allTime_deceased,allTime_recovered,delta_confirmed,delta_deceased,delta_recovered);
-                console.log("https function" + location_info);
 
                 
             // }; 
