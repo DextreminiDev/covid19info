@@ -1,39 +1,41 @@
 <%- include('partials/header'); -%>
-    <div><%=cityName%></div>
-    <br>
-    <div>Active
-        <ul>
-            <li>
-                <%=Active%>
-            </li>
-        </ul>
+
+    <div class="main-response">
+        <h1><%=cityName%></h1>
+        <br>
+        <h3>Active : <%=Active%></h2>
+        <br>
     </div>
-    <br>
-    <div>All Time
-        <ul>
-            <li>
-                <%=allTimeConfirmed%>
-            </li>
-            <li>
-                <%=allTimeDeceased%>
-            </li>
-            <li>
-                <%=allTimeRecovered%>
-            </li>
-        </ul>
+
+    <div class="secondary-response row">
+        <div class="col-4">
+            <h5>
+                Confirmed
+            </h5>
+            <br>
+            All-Time : <%=allTimeConfirmed%>
+            <br>
+            Today : <%=casesToday%>
+        </div>
+        <div class="col-4">
+            <h5>
+                Deceased
+            </h5>
+            <br>
+            All-Time : <%=allTimeDeceased%>
+            <br>
+            Today : <%=deathsToday%>
+        </div>
+        <div class="col-4">
+            <h5>
+                Recovered
+            </h5>
+            <br>
+            All-Time : <%=allTimeRecovered%>
+            <br>
+            Today : <%=recoveredToday%>
+        </div>
     </div>
-    <br>
-    <div>Today
-        <ul>
-            <li>
-                <%=casesToday%>
-            </li>
-            <li>
-                <%=deathsToday%>
-            </li>
-            <li>
-                <%=recoveredToday%>
-            </li>
-        </ul>
-    </div>
+
+
 <%- include('partials/footer'); -%>
